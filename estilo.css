@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(154, 184, 214);
+}
+
+section {
+    margin: 30px auto;
+    border: 2px solid navy;
+    box-shadow: 15px 10px 20px;
+    border-radius: 25px;
+    padding: 20px;
+}

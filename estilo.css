@@ -1,14 +1,70 @@
+header {
+    background-color: rgb(44, 106, 168);
+    border: 2px solid navy;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(0, 70, 128)
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 20px;
     padding: 0;
     background-color: rgb(154, 184, 214);
 }
 
+h2 {
+    text-align: center;
+}
+
 section {
-    margin: 30px auto;
+    margin: 20px auto;
     border: 2px solid navy;
     box-shadow: 15px 10px 20px;
-    border-radius: 25px;
-    padding: 20px;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: rgb(219, 223, 238);
+}
+
+table {
+    margin: 10px;
+    border-collapse: collapse;
+    border: 2px solid navy;
+}
+
+td {
+    padding: 10px;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+table:nth-child(2) {
+    background-color: white;
+}
+
+hr {
+    border-top: 3px solid navy;
+}
+
+
+
+footer {
+    text-align: center;
 }

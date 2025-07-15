@@ -5,39 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba de Formulario</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: gainsboro;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 1, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: firebrick;
-        }
-
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="estiloform.css">
 </head>
 
 <body>
     <h1>Formulario en HTML</h1>
     <h4>Los campos indicados con * son obligatorios.</h4>
-    <div>
+    <section>
         <form action="#" method="get">
             <div>
                 <label for="">* Ingrese su nombre:</label>
@@ -67,11 +41,6 @@
                 <label for="">Observaciones:</label>
                 <textarea name="" id="" rows="5"></textarea>
             </div>
-            <br>
-            <label for="">Botones</label>
-            <input type="submit" value="Guardar">
-            <input type="reset" value="Cancelar">
-            <button>Botón</button>
             <div>
                 <label for="">Cursos disponibles:</label>
                 <br>
@@ -92,8 +61,12 @@
                     <option value="3">Agustín Codazzi</option>
                 </select>
             </div>
+            <label for="">Botones</label>
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Cancelar">
+            <button>Botón</button>
         </form>
-    </div>
+    </section>
 
 </body>
 

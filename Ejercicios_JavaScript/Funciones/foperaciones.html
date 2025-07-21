@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <script>
+        function suma(a, b) {
+            return a + b;
+        }
+        function resta(a, b) {
+            return a - b;
+        }
+        function multiplicacion(a, b) {
+            return a * b;
+        }
+        function division(a, b) {
+            return a / b;
+        }
+        let a = parseFloat(prompt("Ingresa un valor para a: "))
+        let b = parseFloat(prompt("Ingresa un valor para b: "))
+        let resultado1 = suma(a, b);
+        let resultado2 = resta(a, b);
+        let resultado3 = multiplicacion(a, b);
+        let resultado4 = division(a, b);
+        console.log("Valor de a: ", a)
+        console.log("Valor de b: ", b)
+        console.log("Resultado Suma", resultado1)
+        console.log("Resultado Resta", resultado2)
+        console.log("Resultado Multiplicación", resultado3)
+        console.log("Resultado División", resultado4)
+        document.write("La suma de los números es: ", resultado1 +"<br>")
+        document.write("La resta de los números es: ", resultado2 +"<br>")
+        document.write("La multiplicación de los números es: ", resultado3+"<br>")
+        document.write("La división de los números es: ", resultado4+"<br>")
+    </script>
+
+</body>
+
+</html>

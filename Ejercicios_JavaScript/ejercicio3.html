@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Operadores Lógicos</title>
+</head>
+
+<body>
+    <script>
+        let esMayorDeEdad = true
+        let tieneLicencia = false
+        let puedeConducir=esMayorDeEdad && tieneLicencia
+        let capacidadAprender=esMayorDeEdad || tieneLicencia
+
+        console.log("Puede conducir?", puedeConducir);
+        console.log("Tiene capacidad de aprender a conducir?", capacidadAprender);
+
+        if (puedeConducir = true) {
+            console.log("Bienvenido: Usted es mayor de edad y tiene licencia, puede conducir");
+        }
+        else {
+            console.log("Bienvenido: Usted no puede conducir, no cumple con las condiciones");
+        }
+        if (capacidadAprender = true) {
+            console.log("Bienvenido: Usted es mayor de edad o tiene licencia");
+        }
+        else {
+            console.log("Bienvenido: Usted no cumple con las condiciones");
+        }
+    
+    </script>
+</body>
+
+</html>

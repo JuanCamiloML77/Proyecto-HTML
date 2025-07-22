@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px, 50px, 10px;
+    padding: 1em;
+    background-color: rgb(214, 163, 154);
+}
+
+
+h1 {
+    margin: 50px;
+    background-color: rgb(168, 48, 44);
+    border: 2px solid rgb(128, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+form {
+    margin: 100px, 500px 100px;
+    text-align: center;
+    border: 5px solid rgb(128, 0, 0);
+    border-radius: 5px;
+    padding: 1em;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+button:hover {
+    background-color: rgb(65, 4, 4);
+    color: white;
+}
+

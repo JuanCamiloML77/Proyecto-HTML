@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.encabezado {
+    text-align: center;
+    background-color: teal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style: italic;
+    color: whitesmoke;
+    padding: 20px;
+    border: 2px solid black;
+    border-bottom: none;
+    grid-area: encabezado;
+    position: relative;
+}
+
+#logo {
+    width: 80px;
+    border-radius: 40px;
+    opacity: 0.9;
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: absolute;
+}
+
+.cuerpo {
+    background-color: rgba(0, 128, 128, 0.374);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    grid-area: cuerpo;
+    border: 2px solid black;
+    border-bottom: none;
+}
+
+
+.panel {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: rgb(193, 231, 231);
+    grid-area: panel;
+}
+
+.principal {
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "Seccion 1"
+        "Seccion 2"
+        "Seccion 3"
+        "Seccion 4"
+        "Seccion 5"
+        "Seccion 6";
+    border: 2px solid black;
+
+    @media(min-width: 900px) {
+        grid-template: 
+        "Seccion 1 Seccion 1 Seccion 1" 100px
+        "Seccion 1 Seccion 2 Seccion 3" 100%
+        "Seccion 4 Seccion 5 Seccion 6" 50px auto auto;
+    }
+}
+
+
+.menu {
+    text-align: center;
+    background-color: rgba(0, 128, 128, 0.374);
+    color: whitesmoke;
+    padding: 20px;
+    grid-area: menu;
+    border: 2px solid black;
+    border-bottom: none;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    grid-area: menu;
+}
+
+.menu a:hover {
+    color: rgb(0, 70, 128);
+    font-size: large;
+    grid-area: menu;
+}
+
+.barra {
+    float: right;
+    display: inline;
+    font-style: italic;
+    background-color: rgba(0, 128, 128, 0.374);
+    color: black;
+    border: 2px solid black;
+    grid-area: barra;
+
+}
+
+.barra li {
+    list-style-type: none;
+}
+
+.barra li:hover {
+    color: rgb(0, 70, 128);
+    font-weight: bold;
+    font-size: large;
+    grid-area: barra;
+}
+
+.piepagina {
+    text-align: center;
+    background-color: teal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: whitesmoke;
+    padding: 20px;
+    border: 2px solid black;
+    grid-area: piepagina;
+}

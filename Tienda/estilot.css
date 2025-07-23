@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-
+    font-size: 16px;
 }
 
 .encabezado {
@@ -52,7 +52,7 @@
     padding: 20px;
     display: grid;
     gap: 10px;
-    grid-template-areas:
+    grid-template:
         "Seccion 1"
         "Seccion 2"
         "Seccion 3"
@@ -62,10 +62,10 @@
     border: 2px solid black;
 
     @media(min-width: 900px) {
-        grid-template: 
-        "Seccion 1 Seccion 1 Seccion 1" 100px
-        "Seccion 1 Seccion 2 Seccion 3" 100%
-        "Seccion 4 Seccion 5 Seccion 6" 50px auto auto;
+        grid-template:
+            "Seccion 1 Seccion 1 Seccion 1" 100px
+            "Seccion 1 Seccion 2 Seccion 3" 100%
+            "Seccion 4 Seccion 5 Seccion 6" 50px / 50px auto auto;
     }
 }
 

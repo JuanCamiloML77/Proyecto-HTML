@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace77 - Zapatillas Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        teal: {
+                            100: '#e6fffa',
+                            200: '#b2f5ea',
+                            300: '#81e6d9',
+                            400: '#4fd1c5',
+                            500: '#38b2ac',
+                            600: '#319795',
+                            700: '#2c7a7b',
+                            800: '#285e61',
+                            900: '#1d4044',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(0, 128, 128, 0.9) 0%, rgba(0, 128, 128, 0.7) 100%), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .sneaker-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .sneaker-card {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-teal-50">
+    <!-- Header/Navbar -->
+    <header class="bg-teal-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shoe-prints text-2xl text-teal-300"></i>
+                    <a href="#" class="text-2xl font-bold">Marketplace<span class="text-teal-300">77</span></a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-teal-300 transition">Inicio</a>
+                    <a href="#" class="hover:text-teal-300 transition">Hombres</a>
+                    <a href="#" class="hover:text-teal-300 transition">Mujeres</a>
+                    <a href="#" class="hover:text-teal-300 transition">Niños</a>
+                    <a href="#" class="hover:text-teal-300 transition">Ofertas</a>
+                </nav>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-teal-300 transition"><i class="fas fa-search"></i></a>
+                    <a href="#" class="hover:text-teal-300 transition"><i class="fas fa-user"></i></a>
+                    <a href="#" class="hover:text-teal-300 transition"><i class="fas fa-shopping-cart"></i></a>
+                    <button class="md:hidden">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Las Mejores Zapatillas del Mercado</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Descubre nuestra colección exclusiva de sneakers de edición limitada y las últimas tendencias en calzado deportivo.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Comprar Ahora</a>
+                <a href="#" class="bg-white hover:bg-gray-100 text-teal-800 font-bold py-3 px-8 rounded-full transition duration-300">Ver Colección</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Brands -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-teal-800 mb-12">Marcas Destacadas</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+                <div class="flex justify-center items-center p-4">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo.png" alt="Nike" class="h-12 object-contain">
+                </div>
+                <div class="flex justify-center items-center p-4">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Adidas-Logo.png" alt="Adidas" class="h-12 object-contain">
+                </div>
+                <div class="flex justify-center items-center p-4">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Puma-Logo.png" alt="Puma" class="h-12 object-contain">
+                </div>
+                <div class="flex justify-center items-center p-4">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/New-Balance-Logo.png" alt="New Balance" class="h-12 object-contain">
+                </div>
+                <div class="flex justify-center items-center p-4">
+                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Converse-Logo.png" alt="Converse" class="h-12 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-teal-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold text-teal-800">Productos Destacados</h2>
+                <a href="#" class="text-teal-600 hover:text-teal-800 font-medium">Ver todos <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md sneaker-card">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600269452121-1f5d1415c810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Nike Air Max" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-teal-600 text-white text-xs font-bold px-2 py-1 rounded-full">NUEVO</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Nike Air Max 270</h3>
+                                <p class="text-gray-600 text-sm">Zapatillas Running</p>
+                            </div>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">HOMBRE</span>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="font-bold text-teal-800">$149.99</span>
+                            <button class="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md sneaker-card">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Adidas Ultraboost" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">-20%</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Adidas Ultraboost 22</h3>
+                                <p class="text-gray-600 text-sm">Zapatillas Running</p>
+                            </div>
+                            <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded">MUJER</span>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-teal-800">$119.99</span>
+                                <span class="text-sm text-gray-500 line-through ml-1">$149.99</span>
+                            </div>
+                            <button class="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md sneaker-card">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Puma RS-X" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Puma RS-X Reinvention</h3>
+                                <p class="text-gray-600 text-sm">Zapatillas Urbanas</p>
+                            </div>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">UNISEX</span>
+                        </div>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="font-bold text-teal-800">$89.99</span>
+                            <button class="bg-teal-600 hover:bg-teal-700 text-white px-3 py-1 rounded-full transition">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md sneaker-card">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=715&q=80" alt="Converse Chuck Taylor" class="w-full h-64 object-cover">
+                        <div class="absolute top-2 right-2 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full">TOP</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Converse Chuck Taylor</h3>
+                                <p class="text-gray-600 text-sm">Zapatillas Casual</p>
+                            </div>
+                            <span class="bg{"ok":false,"message":"terminated"}
+</body>
+</html>
